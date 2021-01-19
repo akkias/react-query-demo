@@ -2,9 +2,10 @@ import React from 'react';
 import { List, Avatar,Row,Col,message, Spin } from 'antd';
 import { useQuery } from 'react-query'
 import axios from 'axios';
+import { environments } from './env';
 
 const getTeacher = async() => {
- let response:any = await axios.get('https://my-json-server.typicode.com/TrushantB/mock-data/teacher');
+ let response:any = await axios.get(`${environments.baseURL}/teacher`);
  if(!response) {
    message.error('Teacher fetching failed')
  }
