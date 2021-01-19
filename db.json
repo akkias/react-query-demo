@@ -1,0 +1,62 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "profile":"https://www.rkh.co.uk/uploads/avatars/JM.png.190x200_q85_crop.png.180x0_q85.png",
+      "name": "Trushant Bhangre",
+      "address": "student address 1"
+    },
+    {
+      "id": 2,
+      "profile":"https://www.rkh.co.uk/uploads/avatars/PP.png.190x200_q85_crop_1.png.190x200_q85_crop.png.180x0_q85.png",
+      "name": "Baldev Pardeshi",
+      "address": "student address 2"
+    },
+    {
+      "id": 3,
+      "profile":"https://www.rkh.co.uk/uploads/avatars/PS.png.190x200_q85_crop.png.180x0_q85.png",
+      "name": "Akshay Chidre",
+      "address": "student address 3"
+    }
+  ],
+  "teacher": [
+    {
+      "id": 11,
+      "name": "Manmohan Joshi",  
+      "profile":"https://www.rkh.co.uk/uploads/avatars/DP.png.190x200_q85_crop.png.180x0_q85.png",
+      "address": "teacher address 1"
+    },
+    {
+      "id": 12,
+      "name": "Shrikant Gosavi",  
+      "profile":"https://www.rkh.co.uk/uploads/avatars/andrew-eades.png.190x200_q85_crop.png.180x0_q85.png",
+      "address": "teacher address 2"
+    },
+    {
+      "id": 13,
+      "name": "Vanita Deshpande",  
+      "profile":"https://www.rkh.co.uk/uploads/avatars/jess-faulks.png.190x200_q85_crop.png.180x0_q85.png",
+      "address": "teacher address 3"
+    }
+  ],
+  "employee": [
+    {
+      "id": 21,
+      "name": "Aniket Shinde",
+      "profile":"https://www.rkh.co.uk/uploads/avatars/Sam_Baxter.png.190x200_q85_crop.png.180x0_q85.png",
+      "address": "employee address 1"
+    },
+    {
+      "id": 22,
+      "name": "Supriya Wale",
+      "profile":"https://www.rkh.co.uk/uploads/avatars/annabelle-harper.png.190x200_q85_crop.png.180x0_q85.png",
+      "address": "employee address 2"
+    },
+    {
+      "id": 23,
+      "name": "Jay Jadhav",
+      "profile":"https://www.rkh.co.uk/uploads/avatars/mayur-odedra.png.190x200_q85_crop.png.180x0_q85.png",
+      "address": "employee address 3"
+    }
+  ]
+}
