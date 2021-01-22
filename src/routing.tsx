@@ -4,6 +4,7 @@ import { Layout } from 'antd';
 import Student from './components/student';
 import Employee from './components/employee';
 import Teacher from './components/teacher';
+import StudentCache from './components/studentCache';
 
 const {  Footer ,Content} = Layout;
 const Routing = () => {
@@ -15,6 +16,7 @@ const Routing = () => {
         </Route>
         <Route exact path="/employee" component={Employee} />
         <Route exact path="/teacher" component={Teacher} />
+        <Route exact path="/student-cache" component={StudentCache} />
       </Content>
   );
 };

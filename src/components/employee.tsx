@@ -1,31 +1,28 @@
 import React from 'react';
-import { List, Avatar,Row,Col,message, Spin } from 'antd';
+import { List, Avatar,Row,Col,message, Spin, Divider } from 'antd';
 import { useQuery } from 'react-query'
 import axios from 'axios';
 import { environments } from './env';
 
-const getEmployee = async() => {
- let response:any = await axios.get(`${environments.baseURL}/employee`);
- if(!response) {
-   message.error('Employee fetching failed')
- }
- return response;
-}
-
 const Employee = () => {
+    
+    const getEmployee = async() => {
+    let response:any = await axios.get(`${environments.baseURL}/employee`);
+    return response;
+    }
 
-    let { data , status} = useQuery('Employee', getEmployee);
+    let { data , status, isLoading} = useQuery('Employee', getEmployee);
     
     return (
       <>
-       <h1>Employee</h1>
-       <Spin spinning={status == 'loading'}>
+       <Divider> <h1 style={{color:'#1890ff'}}>Employee</h1> </Divider>
+       <Spin spinning={isLoading}>
         <Row gutter={20}> 
         <Col offset={8}>
         </Col>
             <Col xs={24} sm={24} md={17} lg={19} xl={6}>
               {
-               status == 'success' &&
+               !isLoading &&
                data.data.map((item:any,index:number) => {
                  return(
                   <List.Item key={index}>
