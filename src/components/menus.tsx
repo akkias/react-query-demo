@@ -22,6 +22,11 @@ const  Menus = () =>  {
           Employee
         </Link>
       </Menu.Item>
+      <Menu.Item key="/student-cache" >
+      <Link to="/student-cache">
+        Student Cache
+        </Link>
+      </Menu.Item>
     </Menu>
   );
 }
